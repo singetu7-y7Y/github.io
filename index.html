@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>フォトギャラリー</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>フォトギャラリー</h1>
+        <div class="controls">
+      <button id="prev">◀ 前</button>
+      <span id="pageinfo"></span>
+      <input id="pagejump" type="number" min="1" style="width:80px" />
+      <button id="goPage">移動</button>
+      <button id="next">次 ▶</button>
+      <button id="selectPage">このページを全選択</button>
+      <button id="downloadSel">選択をZIPダウンロード</button>
+      <select id="perpage">
+        <option value="60">60</option>
+        <option value="90">90</option>
+        <option value="120">120</option>
+      </select>
+    </div>
+  </header>
+  <main>
+    <div id="grid" class="grid"></div>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
+
+
+
